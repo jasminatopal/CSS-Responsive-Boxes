@@ -1,3 +1,49 @@
 body {
   background: papayawhip;
 }
+
+/*give each element a border*/
+* {
+  border: 1px solid black;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: papayawhip;
+  color: black;
+}                                 
+
+.container {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+  justify-content: space-between;
+}                  
+
+main {
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+.c {
+  width: 32%;
+  float: left;
+}
+
+.d {
+  width: 32%;
+  float: center;
+}
+
+.e {
+  width: 32%;
+  float:right;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}                  
